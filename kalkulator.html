@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Kalkulator Rahasia</title>
+  <title>Kalkulator nguawor</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -54,7 +54,7 @@
       height:70px;
       border:none;
       border-radius:20px;
-      font-size:28px;
+      font-size:40px;
       color:white;
       cursor:pointer;
       transition:.15s;
@@ -246,33 +246,42 @@
           "mas bahlil ganteng";
 
         }
-
-        else if(expression === "10*10"){
+        
+        if(expression.length > 6){
 
           display.innerText =
-          "cari sendiri lah kocak";
+          "hitung sendiri";
+
+        }
+        
+        else if(expression === "1+1"){
+
+          display.innerText =
+          "mas bahlil ganteng";
 
         }
 
-        else if(expression === "2*2"){
+        else if(expression === ""){
 
           display.innerText =
-          "made by reza";
+          "";
 
         }
 
-        else if(expression === "2+2"){
+        else if(expression === ""){
 
           display.innerText =
-          "pocu love puji";
+          "";
 
         }
-        else if(expression === "2+3"){
+        else if(expression === ""){
 
           display.innerText =
-          "pocu";
+          "good";
 
         }
+        
+        
         /* =========================
            HASIL NORMAL
         ========================== */
@@ -288,7 +297,7 @@
 
       catch{
 
-        display.innerText = "Error";
+        display.innerText = "hitung sendiri";
 
       }
 
